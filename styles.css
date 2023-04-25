@@ -18,6 +18,7 @@
 }
 .nav-link-wrapper{
     display: flex;
+    flex: 0.3;
     width: 84%;
     margin: auto;
     padding: 20px 0;
@@ -41,10 +42,14 @@
 }
 
 #menu_icon{
-    font-size: 1.5rem;
-    display: none !important;
+    display: none;
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
 }
-
 .logo{
     color:white;
     font-size: 28px;
@@ -60,17 +65,18 @@ span{
     color: #eff4fd;
 }
 
-.main-content-container h1{
+/*left-side*/
+.left-side h1{
     font-style: 50px;
     margin-bottom: 20px; 
 }
 
-.main-content-container p{
+.left-side p{
     color: #555;
     line-height: 22px;
 }
 
-.main-content-container button{
+.left-side button{
     background-color: #ea1538;
     padding: .5rem 2rem;
     text-decoration: none;
@@ -113,6 +119,44 @@ span{
 
 @media only screen and (max-width:1200px){ 
     .nav-link-wrapper{
-        flex: 0.5;
+        flex: 0.3;
     }
+}
+@media only screen and (max-width:800px){ 
+        .toggleMenu{
+        transform: translateX(-100%);
+    }
+    .left-side button{
+        margin-top: 1rem;
+    }
+    #menu_icon{
+        display: block;
+    }
+    .nav-link-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: black;
+        flex-direction: column;
+        justify-self: center;
+    }
+    .nav-link-wrapper li{
+        color: white !important;
+        margin-top: 1rem;
+        border-bottom: 1px solid white;
+    }
+    .main-content-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    .left-side h1{
+        font-size: 2rem;
+    }
+    .left-side span{
+        font-size: 4rem;
+    }
+    
 }
