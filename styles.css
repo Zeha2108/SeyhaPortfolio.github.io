@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/background.jpg);
+}
+#menu_icon{
+    font-size: 1.5rem;
+    color: #eff4fd;
+}
+.nav-link-wrapper{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.nav-link-wrapper ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+}
+
+.nav-link-wrapper ul li a{
+    text-decoration: none;
+    color: #eff4fd;
+    font-weight: bold;  
+}
+
+.nav-link-wrapper ul li a:hover{
+    color:#ea1538;
+}
+
+#menu_icon{
+    font-size: 1.5rem;
+    display: none !important;
+}
+
+.logo{
+    color:white;
+    font-size: 28px;
+}
+
+span{
+    color: #ea1538;
+}
+
+.main-content-container{
+    margin-left: 8%;
+    margin-top: 13% ;
+    color: #eff4fd;
+}
+
+.main-content-container h1{
+    font-style: 50px;
+    margin-bottom: 20px; 
+}
+
+.main-content-container p{
+    color: #555;
+    line-height: 22px;
+}
+
+.main-content-container button{
+    background-color: #ea1538;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    font-weight: bold; 
+    color:#ffff;
+    display: inline-block; 
+    margin: 30px 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(201,201,201);
+    transition: transform .3s;
+}
+
+.main-content-container button:hover{
+    transform: scale(1.1);
+}
+
+.main-content-container button:active{
+    background-color:#ba1025;
+}
+
+#active{
+    color: #ba1025 !important;
+}
+
+/*.imges{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.imges img{ 
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: buttom 1s, left 1s;
+}*/
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands{
+    color: #ea1538;
+    margin: 0rem .5rem;
+    font-size: 1.5rem;
+    transition: color .3s;
+}
+.fa-brands:hover{
+    color: #3498DB !important;
+}
+
+
+@media only screen and (max-width:1200px){ 
+    .nav-link-wrapper{
+        flex: 0.5;
+    }
+}
