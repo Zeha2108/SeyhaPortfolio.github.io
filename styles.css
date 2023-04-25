@@ -95,24 +95,6 @@ span{
 #active{
     color: #ba1025 !important;
 }
-
-/*.imges{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
-
-.imges img{ 
-    width: 400px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: buttom 1s, left 1s;
-}*/
 .social-media{
     display: flex;
     align-items: center;
