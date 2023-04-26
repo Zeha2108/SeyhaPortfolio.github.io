@@ -18,15 +18,20 @@
 }
 .nav-link-wrapper{
     display: flex;
-    flex: 0.3;
     width: 84%;
+    height: 75px;
     margin: auto;
-    padding: 20px 0;
+    padding: 0px 120px;
     justify-content: space-between;
 }
 
+.nav-link-wrapper h2{
+    float: right;
+}
+
 .nav-link-wrapper ul li{
-     display: inline-block;
+    float: left;
+    position: relative;
      list-style: none;
      margin: 10px 20px;
 }
@@ -35,14 +40,44 @@
     text-decoration: none;
     color: #eff4fd;
     font-weight: bold;  
+    padding: 0px 16px;
+    display: block;
 }
+
+/*DropDown Menu*/
+.nav-link-wrapper ul li ul{
+    position: absolute;
+    display: none;
+    background-color: red;
+    border-radius: 0px 0px 5px;
+}
+
+.nav-link-wrapper ul li:hover ul{
+    display: block;
+}
+
+.nav-link-wrapper ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.nav-link-wrapper ul li ul li a{
+    padding: 10px 16px;
+}
+
+.nav-link-wrapper ul li ul li a:hover{
+    background-color: #555;
+}
+/*DropDown Menu*/
 
 .nav-link-wrapper ul li a:hover{
     color:#ea1538;
 }
 
 #menu_icon{
-    display: none;
+    display: none !important;
     font-size: 20px;
     color: white;
     float: right;
@@ -115,8 +150,6 @@ span{
 .fa-brands:hover{
     color: #3498DB !important;
 }
-
-
 @media only screen and (max-width:1200px){ 
     .nav-link-wrapper{
         flex: 0.3;
